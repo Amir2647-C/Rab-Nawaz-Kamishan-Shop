@@ -1,0 +1,137 @@
+/* Header */
+header {
+    background-color: #ff6f00; /* Orange */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff; /* White */
+    box-shadow: 0 2px 4px rgb(243, 21, 21);
+}
+
+/* Navbar Brand Logo */
+.navbar-brand .logo {
+    max-width: 100px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #ff6f00; /* Orange */
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-right: 20px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: linear-gradient(to right, #ff6f00, #f44336, #9c27b0); /* Orange to Pink to Purple */
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/* Product Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff; /* White */
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Add background color and hover animation */
+.card:hover {
+    animation: shake 0.5s;
+    background-color:#ff6f00 ; 
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(4deg); }
+    50% { transform: rotate(-4deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Footer */
+.footer {
+    background-color: #ff6f00; /* Orange */
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Animated Product Cards */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-card {
+    animation: fadeIn 1s;
+}
+
+/* Multicolor Background */
+.multicolor-bg {
+    background: linear-gradient(to right, #ff6f00, #f44336, #9c27b0, #2196f3, #4caf50); /* Orange to Pink to Purple to Blue to Green */
+}
+
+/* Animated Taskbar */
+.taskbar {
+    background-color: #ff6f00; /* Orange */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.taskbar:hover {
+    transform: translateY(-10px);
+}
+
+.taskbar-item {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.taskbar-item a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.taskbar-item a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Additional Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
